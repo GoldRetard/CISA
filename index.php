@@ -35,7 +35,7 @@
 <!--[if IE 8 ]><script type="text/javascript">jQuery("html").addClass("ie ie8");</script><![endif]-->
 <!--[if IE 9 ]><script type="text/javascript">jQuery("html").addClass("ie ie9");</script><![endif]-->
 <!--[if IE]><link rel="stylesheet" type="text/css" href="/Portals/_default/skins/dgov2/ie.css" /><![endif]-->
-<!--[if lte IE 8]><script src="/Desktopmodules/SharedLibrary/Plugins/Respond/js/respond.min.js"></script><![endif]-->
+<!--[if lte IE 8]><script src="/desktopmodules/SharedLibrary/Plugins/Respond/js/respond.min.js"></script><![endif]-->
 <script  src="https://www.google-analytics.com/ga.js" ></script><script  src="/desktopmodules/SharedLibrary/Plugins/GoogleAnalytics/Universal-Federated-Analytics-4.1.js"  id="_fed_an_ua_tag" ></script><meta name="viewport" content="width=device-width,initial-scale=1" /></head>
 <body id="Body">
     <form method="post" action="index.html" id="Form" enctype="multipart/form-data">
