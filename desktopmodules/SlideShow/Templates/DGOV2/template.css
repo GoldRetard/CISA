@@ -1,0 +1,405 @@
+.slideshow-single .slide-inner {
+  display: block;
+  padding-top: 56.25%;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  margin: 0 -10px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.slideshow-single .slide-inner .slide-image {
+  position: absolute;
+  left: -999em;
+  top: -999em;
+}
+
+.slideshow-single-side figure > .image-wrap {
+  margin: 0 0 1rem;
+}
+
+.slideshow-single-side figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 0 3rem;
+}
+
+.slideshow-single-side figure > .image-wrap, .slideshow-single-side figure > figcaption {
+  width: 100%;
+}
+
+.slideshow-single-side figure h1 {
+  font-size: 2rem;
+}
+
+.slideshow-single-side figure h1 sup {
+  display: block;
+  font-size: 70%;
+  color: #5d5d5d;
+  top: 0;
+  line-height: inherit;
+  margin: 0 0 0.5rem;
+}
+
+@media (min-width: 992px) {
+  .slideshow-single .slide-inner {
+    margin: 0;
+  }
+
+  .slideshow-single-side figure > .image-wrap {
+    width: 65%;
+    padding-right: 1.5rem;
+    margin: 0;
+  }
+
+  .slideshow-single-side figure > figcaption {
+    width: 35%;
+  }
+}
+@media (min-width: 1201px) {
+  .slideshow-single-side figure > .image-wrap {
+    width: 70%;
+  }
+
+  .slideshow-single-side figure > figcaption {
+    width: 30%;
+  }
+}
+@media (max-width: 991px), (max-device-width: 991px) {
+  /*Pager*/
+  .GenericSlideshow .slideWrapper .rsNav {
+    display: none !important;
+  }
+}
+.GenericSlideshow .slideWrapper .slideContainer {
+  position: relative;
+}
+
+.GenericSlideshow .slideWrapper .slideContainer .rsOverflow {
+  height: 100% !important;
+}
+
+.GenericSlideshow .slideWrapper .slideContainer .rsOverflow .GenericSlideshowItem .top a {
+  position: relative;
+  display: block;
+  background: black;
+  text-decoration: none !important;
+  width: 100%;
+  height: 760px;
+  overflow: hidden;
+}
+
+.GenericSlideshow .slideWrapper .slideContainer .rsOverflow .GenericSlideshowItem img {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/*Caption Info*/
+.GenericSlideshow .slideWrapper .slideContainer .rsOverflow .GenericSlideshowItem .bottom {
+  margin-top: 10px;
+  text-align: left;
+  text-shadow: none;
+  color: #333;
+  font-size: 17px;
+  line-height: 1.5em;
+}
+
+.GenericSlideshow .slideWrapper .slideContainer .rsOverflow .GenericSlideshowItem .bottom .slideTitle {
+  font-weight: bold;
+}
+
+/*Pager Arrows*/
+.GenericSlideshow .slideWrapper .slideContainer .rsArrow {
+  font-size: 32px;
+  cursor: pointer;
+  color: #ddd;
+  position: absolute;
+}
+
+.GenericSlideshow .slideWrapper .slideContainer .rsArrow.rsArrowLeft {
+  padding-left: 10px;
+}
+
+.GenericSlideshow .slideWrapper .slideContainer .rsArrow.rsArrowRight {
+  padding-right: 10px;
+  right: 0;
+}
+
+.GenericSlideshow .slideWrapper .slideContainer .rsArrow.rsArrowDisabled {
+  color: #777 !important;
+}
+
+.GenericSlideshow .slideWrapper .slideContainer .rsArrowLeft .rsArrowIcn:before {
+  display: inline-block;
+  /* stylelint-disable font-family-no-missing-generic-family-keyword */
+  font-family: "Font Awesome 5 Free";
+  /* stylelint-enable font-family-no-missing-generic-family-keyword */
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f053";
+}
+
+.GenericSlideshow .slideWrapper .slideContainer .rsArrowRight .rsArrowIcn:before {
+  display: inline-block;
+  /* stylelint-disable font-family-no-missing-generic-family-keyword */
+  font-family: "Font Awesome 5 Free";
+  /* stylelint-enable font-family-no-missing-generic-family-keyword */
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f054";
+}
+
+/*Pager*/
+.GenericSlideshow .slideWrapper .rsNav {
+  margin: auto;
+  Position: relative;
+  Bottom: 0;
+  Padding-top: 10px;
+}
+
+.GenericSlideshow .slideWrapper .rsNav .rsNavItem {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #adadad;
+  border-color: #adadad;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.GenericSlideshow .slideWrapper .rsNav .rsNavItem:hover {
+  background-color: #767676;
+  border-color: #767676;
+}
+
+.GenericSlideshow .slideWrapper .rsNav .rsNavSelected {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #355e93;
+  border-color: #355e93;
+}
+
+.GenericSlideshow .slideWrapper .rsNav .rsNavSelected:hover {
+  cursor: default;
+  background-color: #355e93;
+  border-color: #355e93;
+}
+
+.GenericSlideshow .totalCounter {
+  display: none;
+  padding-top: 10px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+
+.GenericSlideshow .slideNumber {
+  display: none;
+}
+
+/* CarouselVideo Template */
+.dgov-carousel.dgov-carousel-video {
+  padding: 4rem 0 3.5rem;
+  background: #141414;
+}
+.dgov-carousel.dgov-carousel-video .image-wrap {
+  position: relative;
+}
+.dgov-carousel.dgov-carousel-video .carousel-wrap .carousel {
+  margin: 0;
+}
+.dgov-carousel.dgov-carousel-video .carousel-wrap {
+  position: relative;
+  max-width: 1400px;
+  width: 90vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .dgov-carousel.dgov-carousel-video .carousel-wrap {
+    margin: 0 15px;
+    width: auto;
+  }
+}
+.dgov-carousel.dgov-carousel-video .carousel-wrap .pull-title {
+  display: none;
+}
+.dgov-carousel.dgov-carousel-video .video-duration {
+  font-size: 18px !important;
+  line-height: 20px !important;
+}
+.dgov-carousel.dgov-carousel-video .slide-container {
+  padding-right: 1em;
+}
+.dgov-carousel.dgov-carousel-video .slick-list {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: -webkit-transform 100ms ease-out;
+  transition: -webkit-transform 100ms ease-out;
+  transition: transform 100ms ease-out;
+  transition: transform 100ms ease-out, -webkit-transform 100ms ease-out;
+}
+.dgov-carousel.dgov-carousel-video .slick-list.active {
+  -webkit-transform: translateX(62px);
+  transform: translateX(62px);
+}
+.dgov-carousel.dgov-carousel-video .slick-list.active.end {
+  -webkit-transform: translateX(1em);
+  transform: translateX(1em);
+}
+.dgov-carousel.dgov-carousel-video .slick-arrow {
+  bottom: auto;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100% !important;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 70px;
+  z-index: 1;
+  font-size: 0 !important;
+}
+.dgov-carousel.dgov-carousel-video .slick-arrow.slick-disabled {
+  opacity: 0 !important;
+  width: 0;
+}
+.dgov-carousel.dgov-carousel-video .slick-arrow [class*=fa-chevron] {
+  font-size: 1.6rem !important;
+  opacity: 0.8;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  top: 32%;
+  position: absolute;
+}
+@media (max-width: 992px) {
+  .dgov-carousel.dgov-carousel-video .slick-arrow [class*=fa-chevron] {
+    font-size: 2rem !important;
+  }
+}
+.dgov-carousel.dgov-carousel-video .slick-arrow [class*=fa-chevron]:hover {
+  opacity: 1;
+}
+.dgov-carousel.dgov-carousel-video .left.slick-arrow {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(20, 20, 20, 0)), to(#141414));
+  background: linear-gradient(to left, rgba(20, 20, 20, 0) 0%, #141414 100%);
+  left: 0;
+}
+.dgov-carousel.dgov-carousel-video .right.slick-arrow {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(20, 20, 20, 0)), to(#141414));
+  background: linear-gradient(to right, rgba(20, 20, 20, 0) 0%, #141414 100%);
+  right: 0;
+}
+.dgov-carousel.dgov-carousel-video .image-wrap:hover img.defaultVideoOverlay,
+.dgov-carousel.dgov-carousel-video .video-wrap-container:hover img.defaultVideoOverlay {
+  display: none;
+}
+.dgov-carousel.dgov-carousel-video .image-wrap:hover img.hoverVideoOverlay,
+.dgov-carousel.dgov-carousel-video .video-wrap-container:hover img.hoverVideoOverlay {
+  display: block;
+}
+.dgov-carousel.dgov-carousel-video .slick-slide {
+  margin: 0;
+}
+.dgov-carousel.dgov-carousel-video .slick-slide img {
+  display: block;
+}
+.dgov-carousel.dgov-carousel-video .slick-slide a .slide-title {
+  background: none;
+  border-left: 0px solid #fff;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2em;
+  margin: 0;
+  padding: 15px 0 0;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.dgov-carousel.dgov-carousel-video .image-wrap img.defaultVideoOverlay,
+.dgov-carousel.dgov-carousel-video .video-wrap-container img.defaultVideoOverlay {
+  background: none !important;
+  border: none !important;
+  cursor: pointer;
+  display: block;
+  left: 50% !important;
+  max-width: 140px;
+  min-width: 60px;
+  position: absolute;
+  top: 50% !important;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 16% !important;
+  z-index: 10;
+  pointer-events: none;
+}
+.dgov-carousel.dgov-carousel-video .image-wrap img.hoverVideoOverlay,
+.dgov-carousel.dgov-carousel-video .video-wrap-container img.hoverVideoOverlay {
+  background: none !important;
+  border: none !important;
+  cursor: pointer;
+  display: none;
+  left: 50% !important;
+  max-width: 140px;
+  min-width: 60px;
+  position: absolute;
+  top: 50% !important;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 16% !important;
+  z-index: 10;
+  pointer-events: none;
+}
+
+@media (max-width: 576px) {
+  .dgov-carousel-video.dgov-carousel .slick-slide .mobile-slide-title-container {
+    display: block;
+  }
+  .dgov-carousel-video.dgov-carousel .slick-slide .mobile-slide-title {
+    line-height: 1.2;
+    background: transparent;
+    color: #fff;
+    padding: 10px 0;
+  }
+  .dgov-carousel-video.dgov-carousel .slick-slide span .slide-title {
+    display: none;
+  }
+}
+header.hover.new-nav:not(.tucked) + main .dgov2-popup-container {
+  margin-top: 100px;
+}
+
+@media (max-width: 767px), (max-device-width: 767px) {
+  header.hover.new-nav:not(.tucked) + main .dgov2-popup-container {
+    margin-top: 70px;
+  }
+}
